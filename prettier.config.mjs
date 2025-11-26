@@ -1,3 +1,5 @@
-import { prettier } from '@maneko/prettier';
+import { prettier } from '@maneko/prettier-config';
 
-export default prettier(100);
+export default prettier({
+  printWidth: 100
+});

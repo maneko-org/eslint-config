@@ -3,7 +3,7 @@ declare module '@maneko/eslint' {
     Awaitable,
     ConfigNames,
     OptionsConfig,
-    TypedFlatConfigItem,
+    TypedFlatConfigItem
   } from '@antfu/eslint-config';
   import type { Linter } from 'eslint';
   import type { FlatConfigComposer } from 'eslint-flat-config-utils';
@@ -11,10 +11,7 @@ declare module '@maneko/eslint' {
   export type Eslint = (
     options?: OptionsConfig & TypedFlatConfigItem,
     ...userConfigs: Awaitable<
-      | FlatConfigComposer<any, any>
-      | Linter.Config[]
-      | TypedFlatConfigItem
-      | TypedFlatConfigItem[]
+      FlatConfigComposer<any, any> | Linter.Config[] | TypedFlatConfigItem | TypedFlatConfigItem[]
     >[]
   ) => FlatConfigComposer<TypedFlatConfigItem, ConfigNames>;
 
