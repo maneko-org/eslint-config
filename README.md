@@ -1,11 +1,11 @@
-# @maneko/eslint
+# @maneko/eslint-config
 
-[![Stars](https://img.shields.io/github/stars/maneko-org/eslint?style=flat-square&logoColor=white)](https://github.com/maneko-org/eslint/stargazers)
-[![Forks](https://img.shields.io/github/forks/maneko-org/eslint?style=flat-square&logoColor=white)](https://github.com/maneko-org/eslint/network/members)
-[![Pull Requests](https://img.shields.io/github/issues-pr/maneko-org/eslint?style=flat-square&logoColor=white)](https://github.com/maneko-org/eslint/pulls)
-[![Issues](https://img.shields.io/github/issues/maneko-org/eslint?style=flat-square&logoColor=white)](https://github.com/maneko-org/eslint/issues)
-[![Contributors](https://img.shields.io/github/contributors/maneko-org/eslint?style=flat-square&logoColor=white)](https://github.com/maneko-org/eslint/graphs/contributors)
-[![License](https://img.shields.io/github/license/maneko-org/eslint?style=flat-square&logoColor=white)](https://github.com/maneko-org/eslint/blob/main/LICENSE)
+[![Stars](https://img.shields.io/github/stars/maneko-org/eslint-config?style=flat-square&logoColor=white)](https://github.com/maneko-org/eslint-config/stargazers)
+[![Forks](https://img.shields.io/github/forks/maneko-org/eslint-config?style=flat-square&logoColor=white)](https://github.com/maneko-org/eslint-config/network/members)
+[![Pull Requests](https://img.shields.io/github/issues-pr/maneko-org/eslint-config?style=flat-square&logoColor=white)](https://github.com/maneko-org/eslint-config/pulls)
+[![Issues](https://img.shields.io/github/issues/maneko-org/eslint-config?style=flat-square&logoColor=white)](https://github.com/maneko-org/eslint-config/issues)
+[![Contributors](https://img.shields.io/github/contributors/maneko-org/eslint-config?style=flat-square&logoColor=white)](https://github.com/maneko-org/eslint-config/graphs/contributors)
+[![License](https://img.shields.io/github/license/maneko-org/eslint-config?style=flat-square&logoColor=white)](https://github.com/maneko-org/eslint-config/blob/main/LICENSE)
 
 A shared, ESLint config four our projects - simple, consistent and modern. Inspired by `@antfu/eslint-config`, tailored for real-world apps and libraries.
 
@@ -25,13 +25,13 @@ Install preset + eslint in your project:
 
 ```bash
 # pnpm (recommended)
-pnpm add -D eslint @maneko/eslint
+pnpm add -D eslint @maneko/eslint-config
 
 # yarn
-yarn add -D eslint @maneko/eslint
+yarn add -D eslint @maneko/eslint-config
 
 # npm
-npm install -D eslint @maneko/eslint
+npm install -D eslint @maneko/eslint-config
 ```
 
 > **Why install `eslint` in the project?**
@@ -40,7 +40,7 @@ npm install -D eslint @maneko/eslint
 Create `eslint.config.mjs` in your project root:
 
 ```js
-import { eslint } from '@maneko/eslint';
+import { eslint } from '@maneko/eslint-config';
 
 export default eslint({
   // A simple example
@@ -52,7 +52,7 @@ export default eslint({
 Minimal preset:
 
 ```js
-import { eslint } from '@maneko/eslint';
+import { eslint } from '@maneko/eslint-config';
 
 export default eslint();
 ```
@@ -62,7 +62,7 @@ export default eslint();
 ### JavaScript
 
 ```js
-import { eslint } from '@maneko/eslint';
+import { eslint } from '@maneko/eslint-config';
 
 export default eslint();
 ```
@@ -70,7 +70,7 @@ export default eslint();
 ### TypeScript + React
 
 ```js
-import { eslint } from '@maneko/eslint';
+import { eslint } from '@maneko/eslint-config';
 
 export default eslint({
   typescript: true,
@@ -84,7 +84,7 @@ If you need to migrate legacy configs, use `@eslint/eslintrc` + `FlatCompat`:
 
 ```js
 import { FlatCompat } from '@eslint/eslintrc';
-import { eslint } from '@maneko/eslint';
+import { eslint } from '@maneko/eslint-config';
 
 const compat = new FlatCompat();
 export default eslint({}, ...compat.config({ extends: ['eslint:recommended'] }));
@@ -160,7 +160,7 @@ Or use `null-ls` / `conform.nvim` as an alternative.
 Pass options or extra flat-configs to the factory:
 
 ```js
-import { eslint } from '@maneko/eslint';
+import { eslint } from '@maneko/eslint-config';
 
 export default eslint(
   { typescript: true, react: true },
@@ -201,4 +201,4 @@ Inspired by `@antfu/eslint-config` - thanks for the design & DX philosophy.
 
 ## License
 
-`@maneko/eslint` is licensed under the MIT License. See the `LICENSE` file in the repository.
+`@maneko/eslint-config` is licensed under the MIT License. See the `LICENSE` file in the repository.

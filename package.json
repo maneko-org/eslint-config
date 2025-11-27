@@ -1,17 +1,17 @@
 {
-  "name": "@maneko/eslint",
+  "name": "@maneko/eslint-config",
   "type": "module",
   "version": "0.1.2",
   "packageManager": "pnpm@10.18.3",
   "description": "Shared ESLint config for our projects",
   "author": "Maneko <contact@maneko.moe>",
   "license": "MIT",
-  "homepage": "https://github.com/maneko-org/eslint",
+  "homepage": "https://github.com/maneko-org/eslint-config",
   "repository": {
-    "url": "https://github.com/maneko-org/eslint"
+    "url": "https://github.com/maneko-org/eslint-config"
   },
   "bugs": {
-    "url": "https://github.com/maneko-org/eslint/issues"
+    "url": "https://github.com/maneko-org/eslint-config/issues"
   },
   "keywords": [
     "javascript",

@@ -1,4 +1,4 @@
-declare module '@maneko/eslint' {
+declare module '@maneko/eslint-config' {
   import type {
     Awaitable,
     ConfigNames,

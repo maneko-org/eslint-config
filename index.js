@@ -1,7 +1,7 @@
 import antfu from '@antfu/eslint-config';
 import pluginReact from 'eslint-plugin-react';
 
-/** @type {import('@maneko/eslint').Eslint} */
+/** @type {import('@maneko/eslint-config').Eslint} */
 export const eslint = ({ ...options }, ...userConfigs) => {
   const stylistic = options.stylistic ?? false;
 
